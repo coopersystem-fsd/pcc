@@ -400,7 +400,6 @@ body:not(.project) .banner .nav .menu-item--languages button svg {
 
   body:not(.project) .banner .nav [aria-current]:hover,
   body:not(.project) .banner .nav .current-menu-parent button:hover {
-    background-color: var(--white);
     border-left-color: transparent;
   }
 
