@@ -175,6 +175,7 @@
 
 .menu-button__menu {
   z-index: 1;
+  position: absolute;
 }
 
 .menu-button__menu [data-popper-arrow],
