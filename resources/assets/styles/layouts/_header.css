@@ -308,6 +308,11 @@ body:not(.project) .banner .nav .menu-item--languages button svg {
     width: auto;
   }
 
+  body .banner .nav a,
+  body .banner .nav button {
+    padding: 17px 0.8rem;
+  }
+
   body:not(.project) .banner .nav a,
   body:not(.project) .banner .nav button {
     background: var(--white);
@@ -315,7 +320,6 @@ body:not(.project) .banner .nav .menu-item--languages button svg {
     font-size: 1rem;
     font-weight: normal;
     min-height: 0;
-    padding: 17px 0.8rem;
   }
 
   body:not(.project) .banner .nav .menu-item--languages button {
