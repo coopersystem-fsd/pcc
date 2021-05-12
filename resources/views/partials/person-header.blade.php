@@ -10,6 +10,7 @@
         @include('partials/breadcrumb')
       @endif
       <h1>{!! App::title() !!}</h1>
+      <p>{!! getRolesPerson() !!}</p>
       @if(isset($person_data['title']))
         {!! wpautop($person_data['title']) !!}
       @endif
