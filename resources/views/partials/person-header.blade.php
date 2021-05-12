@@ -12,7 +12,9 @@
       <h1>{!! App::title() !!}</h1>
       <p>{!! getRolesPerson() !!}</p>
       @if(isset($person_data['title']))
-        {!! wpautop($person_data['title']) !!}
+        <div class="wp-block-column">
+          {!! wpautop($person_data['title']) !!}
+        </div>
       @endif
       @if(isset($person_data['locality']))
         <p class="locality">{{ $person_data['locality'] }}</p>
