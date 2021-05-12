@@ -94,3 +94,15 @@ Container::getInstance()
             'blocks' => require dirname(__DIR__).'/config/blocks.php',
         ]);
     }, true);
+
+function getRolesPerson($person = null) {
+    if ($person == null) $person = get_post();
+    $all_roles = get_the_terms($person, 'pcc-role');
+    
+    $roles_in_text = '';
+    if (!empty($all_roles)) {
+        $all_roles = array_column($all_roles, 'name');
+        $roles_in_text = 'Role(s): '.implode(', ', $all_roles);
+    }
+    return $roles_in_text;
+}
